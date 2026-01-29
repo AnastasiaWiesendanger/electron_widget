@@ -1,0 +1,1034 @@
+body {
+    -webkit-app-region: drag;
+}
+
+/* Container visibility states with smooth fade transition */
+[data-container] {
+    transition: opacity 0.5s ease-in-out;
+}
+
+[data-container].hidden {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+[data-container].visible {
+    opacity: 1;
+    pointer-events: auto;
+    display: block;
+}
+
+.container-zero {
+    width: 300px;
+    height: 300px;
+    /* background-color: rgb(60, 115, 219,0); doesn't follow*/
+    position: relative;
+    animation: move 2s alternate-reverse infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move {
+    0% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.level-10 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: move-level-10 2s alternate-reverse infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move-level-10 {
+    0% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-9 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo da tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-8 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* use the rotate keyframes (was incorrectly using `move`) */
+    transform-origin: 64% 49%;
+    will-change: transform;
+    animation: rotate-level-8 1s ease-in-out alternate-reverse infinite;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes rotate-level-8 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+
+.level-7 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    transform-origin: 35% 50%;
+    animation: rotate-level-7 1s ease-in-out alternate-reverse infinite;
+    animation-delay: 0s;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes rotate-level-7 {
+    0% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.level-6 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-5 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    transform-origin: 50% 50%;
+    animation: rotate-level-5 1s ease-in-out alternate-reverse infinite;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes rotate-level-5{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+
+.level-4 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    animation: scale 0.4s ease-in-out alternate-reverse infinite;
+    transform-origin: 40% 39%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes scale {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(80%);
+    }
+}
+
+.level-3 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* combine move + rotate in a single animation (see @keyframes move-rotate) */
+    animation: move-rotate 2s ease-in-out alternate-reverse infinite;
+    transform-origin: 52% 32%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes move-rotate {
+    0% {
+        transform: translateX(0%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-1%) rotate(-15deg);
+    }
+}
+
+
+.level-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* combine move + rotate in a single animation (see @keyframes move-rotate) */
+    animation: move-rotate 2s ease-in-out alternate-reverse infinite;
+    transform-origin: 52% 32%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* combined animation: translates and rotates at the same time
+   Use this when you need both movement and rotation on the same element.
+*/
+@keyframes move-rotate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0) rotate(-5deg);
+    }
+}
+
+
+
+.container-panick {
+    width: 300px;
+    height: 300px;
+    /* background-color: rgb(60, 115, 219,0); doesn't follow*/
+    position: relative;
+    animation: move 2s alternate-reverse infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move {
+    0% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.level-10 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*tutto questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-9 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo da tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-panick .level-8 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* use the rotate keyframes (was incorrectly using `move`) */
+    transform-origin: 64% 49%;
+    will-change: transform;
+    animation: rotate-level-panick-8 0.5s ease-in-out alternate-reverse infinite;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes rotate-level-panick-8 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+
+.level-7 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    transform-origin: 35% 50%;
+    animation: rotate-level-7 0.5s ease-in-out alternate-reverse infinite;
+    animation-delay: 0s;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes rotate-level-7 {
+    0% {
+        transform: rotate(18deg);
+    }
+    100% {
+        transform: rotate(4deg);
+    }
+}
+
+.level-6 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-5 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    transform-origin: 50% 50%;
+    animation: rotate-level-5 0.5s ease-in-out alternate-reverse infinite;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes rotate-level-5{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(18deg);
+    }
+}
+
+
+.container-panick.level-4 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    animation: scale 0.5s ease-in-out alternate-reverse infinite;
+    transform-origin: 40% 39%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes scale {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(80%);
+    }
+}
+
+.level-3 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-panick .level-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* combine move + rotate in a single animation (see @keyframes move-rotate) */
+    animation: move-rotate-panick-2 0.5s ease-in-out alternate-reverse infinite;
+    transform-origin: 56% 23%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes move-rotate-panick-2 {
+    0% {
+        transform: translateX(0%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-1%) rotate(-5deg);
+    }
+}
+
+.container-panick .level-101 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    animation: move-level-101 0.5s alternate-reverse infinite, 
+               fade-level-101 0.5s ease-in-out alternate-reverse infinite;
+    animation-timing-function: ease-in-out, ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes move-level-101 {
+    0% {
+        transform: translateY(-1%);
+    }
+    100% {
+        transform: translateY(1%);
+    }
+}
+
+@keyframes fade-level-101 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container-panick .level-102 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    animation: move-level-102 0.5s alternate-reverse infinite;
+    animation-timing-function: ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes move-level-102 {
+    0% {
+        transform: translateY(-1%);
+    }
+    100% {
+        transform: translateY(1%);
+    }
+}
+
+.container-panick .level-103 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    animation: move-level-103 0.5s alternate-reverse infinite;
+    animation-timing-function: ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes move-level-103 {
+    0% {
+        transform: translateY(-1%);
+    }
+    100% {
+        transform: translateY(1%);
+    }
+}
+
+.container-panick .level-104 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    animation: move-level-104 0.5s alternate-reverse infinite;
+    animation-timing-function: ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes move-level-104 {
+    0% {
+        transform: translateY(-1%);
+    }
+    100% {
+        transform: translateY(1%);
+    }
+}
+
+
+.container-panick .level-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* combine move + rotate in a single animation (see @keyframes move-rotate) */
+    animation: move-rotate 0.5s ease-in-out alternate-reverse infinite;
+    transform-origin: 52% 32%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* combined animation: translates and rotates at the same time
+   Use this when you need both movement and rotation on the same element.
+*/
+@keyframes move-rotate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0) rotate(-5deg);
+    }
+}
+
+.level-05 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* combine scale + rotate in a single animation (see @keyframes scale-rotate) */
+    animation: scale-rotate 0.5s ease-in-out alternate-reverse infinite;
+    transform-origin: 36% 23%;
+    /* separate X/Y scale control via CSS variables */
+    --scale-start-x: 1;
+    --scale-start-y: 1;
+    --scale-end-x: 0.85;
+    --scale-end-y: 0.7;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* combined animation: translates and rotates at the same time
+   Use this when you need both movement and rotation on the same element.
+*/
+@keyframes move-rotate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0) rotate(-5deg);
+    }
+}
+
+@keyframes scale-rotate {
+    0% {
+        transform: scale(var(--scale-start-x), var(--scale-start-y)) rotate(0deg);
+    }
+    100% {
+        transform: scale(var(--scale-end-x), var(--scale-end-y)) rotate(-5deg);
+    }
+}
+
+.level-0 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* combine move + rotate in a single animation (see @keyframes move-rotate) */
+    animation: move-rotate-level-0 0.5s ease-in-out alternate-reverse infinite;
+    transform-origin: 52% 32%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* combined animation: translates and rotates at the same time
+   Use this when you need both movement and rotation on the same element.
+*/
+@keyframes move-rotate-level-0 {
+    0% {
+        transform: translateY(-1px) rotate(0deg);
+    }
+    100% {
+        /* translate needs units; use px or % as appropriate */
+        transform: translateY(7px) rotate(-5deg);
+    }
+}
+
+
+.container-worry {
+    width: 300px;
+    height: 300px;
+    /* background-color: rgb(60, 115, 219,0); doesn't follow*/
+    position: relative;
+    animation: move 2s alternate-reverse infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move {
+    0% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.level-10 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*tutto questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-9 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo da tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-8 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* use the rotate keyframes (was incorrectly using `move`) */
+    transform-origin: 64% 49%;
+    will-change: transform;
+    animation: rotate-level-8 2s ease-in-out alternate-reverse infinite;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes rotate-level-8 {
+    0% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+
+.level-7 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Remove animations for level-7 in container-worry */
+.container-worry .level-7 {
+    animation: none;
+    transform: none;
+}
+
+.level-6 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-5 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Remove animations for level-5 in container-worry */
+.container-worry .level-5 {
+    animation: none;
+    transform: none;
+}
+
+
+.level-3 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* combine move + rotate in a single animation (see @keyframes move-rotate) */
+    animation: move-rotate 2s ease-in-out alternate-reverse infinite;
+    transform-origin: 52% 32%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes move-rotate {
+    0% {
+        transform: translateX(0%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-1%) rotate(-15deg);
+    }
+}
+
+
+.level-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* combine move + rotate in a single animation (see @keyframes move-rotate) */
+    animation: move-rotate 2s ease-in-out alternate-reverse infinite;
+    transform-origin: 52% 32%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* combined animation: translates and rotates at the same time
+   Use this when you need both movement and rotation on the same element.
+*/
+@keyframes move-rotate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0) rotate(-5deg);
+    }
+}
+
+
+.container-time-clock {
+    width: 300px;
+    height: 300px;
+    /* background-color: rgb(60, 115, 219,0); doesn't follow*/
+    position: absolute;
+}
+
+.level-time-clock {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-time-clock-2 {
+    width: 300px;
+    height: 300px;
+    /* background-color: rgb(60, 115, 219,0); doesn't follow*/
+    position: absolute;
+}
+
+.level-time-clock-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container-asleep {
+    width: 300px;
+    height: 300px;
+    /* background-color: rgb(60, 115, 219,0); doesn't follow*/
+    position: relative;
+    animation: move 2s alternate-reverse infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move {
+    0% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.level-10 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*tutto questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-9 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo da tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-8 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* use the rotate keyframes (was incorrectly using `move`) */
+    transform-origin: 64% 49%;
+    will-change: transform;
+    animation: rotate-level-8 2s ease-in-out alternate-reverse infinite;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes rotate-level-8 {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+
+.level-6 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.level-3 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* combine move + rotate in a single animation (see @keyframes move-rotate) */
+    animation: move-rotate 2s ease-in-out alternate-reverse infinite;
+    transform-origin: 52% 32%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes move-rotate {
+    0% {
+        transform: translateX(0%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-1%) rotate(-15deg);
+    }
+}
+
+
+.level-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+    /* combine move + rotate in a single animation (see @keyframes move-rotate) */
+    animation: move-rotate 2s ease-in-out alternate-reverse infinite;
+    transform-origin: 52% 32%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* combined animation: translates and rotates at the same time
+   Use this when you need both movement and rotation on the same element.
+*/
+@keyframes move-rotate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0) rotate(-5deg);
+    }
+}
+
+.level-z1 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-z2 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.level-z3 {
+    width: 100%;
+    height: 100%;
+    position: absolute; /*questo per tutti*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+.stat, .time {
+  display: none;
+}  for the time*/ 

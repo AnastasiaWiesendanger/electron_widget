@@ -1,0 +1,227 @@
+        <div class="level-10-clown">
+            <img src="img/rings.png" alt="level-10-clown">
+        </div>
+        <div class="level-9-clown">
+            <img src="img/spaceship.png" alt="level-9-clown">
+        </div>
+        <div class="level-8-clown">
+            <img src="img/tail.png" alt="level-8-clown">
+        </div>
+        <div class="level-7-clown">
+            <img src="img/behind_arm.png" alt="level-7-clown">
+        </div>
+        <div class="level-6-clown">
+            <img src="img/body.png" alt="level-6-clown">
+        </div>
+        <div class="level-5-clown">
+            <img src="img/front_arm.png" alt="level-5-clown">
+        </div>
+        <div class="level-4-clown">
+            <img src="img/clown_makeup.png" alt="level-4-clown">
+        </div>
+        <div class="level-3-clown">
+            <img src="img/lips.png" alt="level-3-clown">
+        </div>
+        <div class="level-2-clown">
+            <img src="img/clown_hat.png" alt="level-2-clown">
+        </div>
+        <div class="level-1-clown">
+            <img src="img/eye.png" alt="level-1-clown">
+        </div>
+
+
+
+
+        <div class="level-10-asleep">
+            <img src="img/rings.png" alt="level-10-asleep">
+        </div>
+        <div class="level-9-asleep">
+            <img src="img/spaceship.png" alt="level-9-asleep">
+        </div>
+        <div class="level-8-asleep">
+            <img src="img/asleep_tail.png" alt="level-8-asleep">
+        </div>
+        <div class="level-7-asleep">
+            <img src="img/behind_arm.png" alt="level-7-asleep">
+        </div>
+        <div class="level-6-asleep">
+            <img src="img/body.png" alt="level-6-asleep">
+        </div>
+        <div class="level-5-asleep">
+            <img src="img/front_arm.png" alt="level-5-asleep">
+        </div>
+        <div class="level-4-asleep">
+           <img src="img/clown_makeup.png" alt="level-4-asleep">
+        </div>
+        <div class="level-3-asleep">
+            <img src="img/lips.png" alt="level-3-asleep">
+        </div>
+        <div class="level-2-asleep">
+            <img src="img/asleep_neck.png" alt="level-2-asleep">
+        </div>
+        <div class="level-1-asleep">
+            <img src="img/asleep_eye.png" alt="level-1-asleep">
+        </div>
+
+        <div class="level-101-asleep">
+            <img src="img/asleep_1.png" alt="level-101-asleep">
+        </div>
+        <div class="level-102-asleep">
+            <img src="img/asleep_2.png" alt="level-102-asleep">
+        </div>
+        <div class="level-103-asleep">
+            <img src="img/asleep_3.png" alt="level-103-asleep">
+        </div>
+
+
+
+
+        <div class="level-10-cutsy">
+            <img src="img/rings.png" alt="level-10-cutsy">
+        </div>
+        <div class="level-9-cutsy">
+            <img src="img/spaceship.png" alt="level-9-cutsy">
+        </div>
+        <div class="level-8-cutsy">
+            <img src="img/tail.png" alt="level-8-cutsy">
+        </div>
+        <div class="level-7-cutsy">
+            <img src="img/behind_arm.png" alt="level-7-cutsy">
+        </div>
+        <div class="level-6-cutsy">
+            <img src="img/body.png" alt="level-6-cutsy">
+        </div>
+        <div class="level-5-cutsy">
+            <img src="img/front_arm.png" alt="level-5-cutsy">
+        </div>
+        <div class="level-4-cutsy">
+            <img src="img/mouth.png" alt="level-4-cutsy">
+        </div>
+        <div class="level-3-cutsy">
+            <img src="img/lips.png" alt="level-3-cutsy">
+        </div>
+        <div class="level-2-cutsy">
+            <img src="img/cutsy_neck.png" alt="level-2-cutsy">
+        </div>
+        <div class="level-1-cutsy">
+            <img src="img/cutsy_eye.png" alt="level-1-cutsy">
+        </div>
+
+        <div class="level-101-cutsy">
+            <img src="img/cutsy_1.png" alt="level-101-cutsy">
+        </div>
+        <div class="level-102-cutsy">
+            <img src="img/cutsy_2.png" alt="level-102-cutsy">
+        </div>
+        <div class="level-103-cutsy">
+            <img src="img/cutsy_3.png" alt="level-103-cutsy">
+        </div>
+
+I can do: Change the hover trigger to a specific element (not the whole body)
+
+
+
+        <div class="level-10-excited">
+            <img src="img/rings.png" alt="level-10-excited">
+        </div>
+        <div class="level-9-excited">
+            <img src="img/spaceship.png" alt="level-9-excited">
+        </div>
+        <div class="level-8-excited">
+            <img src="img/excited_tail.png" alt="level-8-excited">
+        </div>
+        <div class="level-7-excited">
+            <img src="img/behind_arm.png" alt="level-7-excited">
+        </div>
+        <div class="level-6-excited">
+            <img src="img/body.png" alt="level-6-excited">
+        </div>
+        <div class="level-5-excited">
+            <img src="img/front_arm.png" alt="level-5-excited">
+        </div>
+        <div class="level-4-excited">
+            <img src="img/mouth.png" alt="level-4-excited">
+        </div>
+        <div class="level-3-excited">
+            <img src="img/lips.png" alt="level-3-excited">
+        </div>
+        <div class="level-2-excited">
+            <img src="img/excited_neck.png" alt="level-2-excited">
+        </div>
+        <div class="level-1-excited">
+            <img src="img/excited_eye.png" alt="level-1-excited">
+        </div>
+
+
+
+
+        <div class="level-10-angry">
+            <img src="img/rings.png" alt="level-10-angry">
+        </div>
+        <div class="level-9-angry">
+            <img src="img/spaceship.png" alt="level-9-angry">
+        </div>
+        <div class="level-8-angry">
+            <img src="img/tail.png" alt="level-8-angry">
+        </div>
+        <div class="level-7-angry">
+            <img src="img/behind_arm.png" alt="level-7-angry">
+        </div>
+        <div class="level-6-angry">
+            <img src="img/body.png" alt="level-6-angry">
+        </div>
+        <div class="level-5-angry">
+            <img src="img/front_arm.png" alt="level-5-angry">
+        </div>
+        <div class="level-4-angry">
+            <img src="img/angry_mouth.png" alt="level-4-angry">
+        </div>
+        <div class="level-3-angry">
+            <img src="img/lips.png" alt="level-3-angry">
+        </div>
+        <div class="level-2-angry">
+            <img src="img/neck.png" alt="level-2-angry">
+        </div>
+        <div class="level-1-angry">
+            <img src="img/angry_eye.png" alt="level-1-angry">
+        </div>
+
+
+
+
+        <div class="level-10-sad">
+            <img src="img/rings.png" alt="level-10-sad">
+        </div>
+        <div class="level-9-sad">
+            <img src="img/spaceship.png" alt="level-9-sad">
+        </div>
+        <div class="level-8-sad">
+            <img src="img/sad_tail.png" alt="level-8-sad">
+        </div>
+        <div class="level-7-sad">
+            <img src="img/behind_arm.png" alt="level-7-sad">
+        </div>
+        <div class="level-6-sad">
+            <img src="img/body.png" alt="level-6-sad">
+        </div>
+        <div class="level-5-sad">
+            <img src="img/front_arm.png" alt="level-5-sad">
+        </div>
+        <div class="level-4-sad">
+            <img src="img/sad_mouth.png" alt="level-4-sad">
+        </div>
+        <div class="level-3-angry">
+            <img src="img/sad_lips.png" alt="level-3-sad">
+        </div>
+        <div class="level-2-sad">
+            <img src="img/neck.png" alt="level-2-sad">
+        </div>
+        <div class="level-1-sad">
+            <img src="img/sad_eye.png" alt="level-1-sad">
+        </div>
+
+
+Fare queste animazioni in diversi container
+
+Cloud sonnet 4.5 -> altra intelligenza artificiale al posto di copilot
+Per Screenshot -> invece di accedere allo screenshot, fai che determinata combinazione di stati ti fa fate qualcosa (comand-shift-5)

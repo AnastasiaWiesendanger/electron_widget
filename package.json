@@ -1,0 +1,19 @@
+{
+  "name": "cc1",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . SystemMonitorApp --platform=darwin --arch=x64 --icon=assets/icon.icns --overwrite",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^26.4.0",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "brightness": "^3.0.0",
+    "systeminformation": "^5.27.11"
+  }
+}
